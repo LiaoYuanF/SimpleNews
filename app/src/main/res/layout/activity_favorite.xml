@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="57dp">
+
+        <TextView
+            android:id="@+id/favorite_textView"
+            android:layout_width="399dp"
+            android:layout_height="56dp"
+            android:lineSpacingExtra="30sp"
+            android:text="我的收藏"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:typeface="normal" />
+
+        <ListView
+            android:id="@+id/favorite_listView"
+            android:layout_width="409dp"
+            android:layout_height="673dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
