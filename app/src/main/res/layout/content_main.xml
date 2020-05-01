@@ -9,12 +9,13 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main_bar">
 
+    <!--显示主题页面 包括新闻_1 MY_2 -->
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottomNavView"></androidx.viewpager.widget.ViewPager>
-
+    <!--显示底边按钮-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavView"
         android:layout_width="match_parent"
