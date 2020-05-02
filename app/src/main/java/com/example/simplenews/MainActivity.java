@@ -37,9 +37,13 @@ public class MainActivity extends AppCompatActivity
 
     private ViewPager viewPager;
     private ViewPagerAdapter viewPagerAdapter;
+    private static  int myTheme=R.style.AppTheme;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(myTheme!=R.style.AppTheme){
+            setTheme(myTheme);
+        }
         setContentView(R.layout.activity_main);
         /*顶部栏*/
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -95,6 +99,8 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+
+
     }
 
     @Override
@@ -124,18 +130,30 @@ public class MainActivity extends AppCompatActivity
             //TODO: goto history
         } else if (id == R.id.item_setting) {
             Intent intent = new Intent();
-            popout("setting","你正在访问favorite","");
+
+            switch (myTheme){
+                case R.style.AppTheme:
+                    myTheme=R.style.AppThemeBule;
+                    break;
+                case R.style.AppThemeBule:
+                    myTheme=R.style.AppThemeGreen;
+                    break;
+                case R.style.AppThemeGreen:
+                    myTheme=R.style.AppThemeGrey;
+                    break;
+                case R.style.AppThemeGrey:
+                    myTheme=R.style.AppThemeYellow;
+                    break;
+                case R.style.AppThemeYellow:
+                    myTheme=R.style.AppTheme;
+                    break;
+            }
+            recreate();
             //TODO: goto setting
         } else if (id == R.id.subitem_01) {
             Intent intent = new Intent();
-            popout("subitem","你正在访问subitem","");
-            //TODO: DO NOTHING
-        } else if (id == R.id.subitem_02) {
-            popout("subitem","你正在访问subitem","");
-            //TODO: DO NOTHING
-        } else if (id == R.id.subitem_03) {
-            popout("subitem","你正在访问subitem","");
-            //TODO: DONOTHING
+            intent.setClass(this, aboutUs.class);
+            startActivity(intent);
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

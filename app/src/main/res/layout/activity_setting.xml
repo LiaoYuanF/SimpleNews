@@ -5,19 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.chip.ChipGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="146dp"
-        tools:ignore="MissingConstraints">
-
-    </com.google.android.material.chip.ChipGroup>
-
     <Button
         android:id="@+id/set_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/ButtonTheme"
         android:text="Set Color"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="109dp"

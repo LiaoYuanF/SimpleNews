@@ -1,24 +1,38 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!--此类型声明为main_acitvity_menu中的单个选项
-    <style name="MenuTabText">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">#ffffff</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:drawablePadding">15dp</item>
-        <item name="android:padding">15dp</item>
-        <item name="android:textSize">22sp</item>
+    <style name="AppThemeBule" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">#607D8B</item>
     </style>
-    -->
+
+    <style name="AppThemeGreen" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#388E3C</item>
+        <item name="colorAccent">#F3F5F3</item>
+    </style>
+
+    <style name="AppThemeYellow" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#FFC107</item>
+        <item name="colorPrimaryDark">#FF9800</item>
+        <item name="colorAccent">#927215</item>
+    </style>
+
+    <style name="AppThemeGrey" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#607D8B</item>
+        <item name="colorPrimaryDark">#455A64</item>
+        <item name="colorAccent">#58575A</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
@@ -32,4 +46,16 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="ButtonTheme" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">@dimen/spacing_tiny</item>
+        <item name="android:paddingTop">@dimen/spacing_smallest</item>
+        <item name="android:paddingBottom">@dimen/spacing_smallest</item>
+        <item name="android:background">@drawable/theme_button_selector</item>
+    </style>
+
 </resources>

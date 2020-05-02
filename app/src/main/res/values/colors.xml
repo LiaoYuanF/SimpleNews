@@ -3,6 +3,7 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-
+    <color name="white">#ffffff</color>
     <color name="colorMenuBackground"> #C7EDCC</color><!-- 用作menu背景色 -->
+    <color name="grassGreen">#99cc33</color><!--用作aboutus背景色-->
 </resources>
