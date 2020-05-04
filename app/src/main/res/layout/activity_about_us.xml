@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="176dp">
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:text="参与人员"
+            android:background="@color/grassGreen"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="7px"
+            />
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:text="冯燎原 刘一凡 李京杨 李林克 王楚童 王丹 "
+            android:textStyle="normal"
+            android:layout_margin="7px"
+            />
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:text="APP概述"
+            android:background="@color/grassGreen"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="7px"
+            />
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:text="Simplenew 实现了浏览新闻，登录，注册收藏，历史等的基本功能"
+            android:layout_margin="7px"
+            />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
