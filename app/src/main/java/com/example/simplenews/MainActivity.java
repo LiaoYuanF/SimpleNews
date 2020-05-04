@@ -1,8 +1,11 @@
 package com.example.simplenews;
 
+// <<<<<<< build_main_activity
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.SearchManager;
 import android.content.Context;
+// =======
+// >>>>>>> master
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -32,12 +35,18 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+// <<<<<<< build_main_activity
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
 
     private ViewPager viewPager;
     private ViewPagerAdapter viewPagerAdapter;
     private static  int myTheme=R.style.AppTheme;
+// =======
+// import androidx.appcompat.app.AppCompatActivity;
+
+// public class MainActivity extends AppCompatActivity {
+// >>>>>>> master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +54,7 @@ public class MainActivity extends AppCompatActivity
             setTheme(myTheme);
         }
         setContentView(R.layout.activity_main);
+// <<<<<<< build_main_activity
         /*顶部栏*/
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.app_name);
@@ -211,5 +221,10 @@ class ViewPagerAdapter extends FragmentPagerAdapter {
     }
     public Fragment getInstantFragment() {
         return instantFragment;
+// =======
+
+// //        Intent intent = new Intent(MainActivity.this, NewsDetailActivity.class);
+// //        startActivity(intent);
+// >>>>>>> master
     }
 }
